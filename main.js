@@ -7,60 +7,26 @@
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (() => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"test\": () => (/* binding */ test)\n/* harmony export */ });\nconst test = () => console.log('Hello');\ntest()\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("const page = document.querySelector('body');\n\nconst navContainer = document.createElement(\"nav\");\nconst navigationList = document.createElement(\"ul\");\nconst navHome = document.createElement('li');\nconst navMenu = document.createElement('li');\nconst navContact = document.createElement('li');\n\nnavigationList.classList.add(\"navigation-list\");\n\npage.prepend(navContainer);\nnavContainer.append(navigationList);\n\nnavHome.textContent = \"Home\";\nnavHome.classList.add('nav-home');\nnavMenu.textContent = \"Menu\";\nnavMenu.classList.add('nav-menu');\nnavContact.textContent = \"Contact\";\nnavContact.classList.add(\"nav-contact\");\n\n\n\nnavigationList.append(navHome, navMenu, navContact);\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
 
 /***/ })
 
 /******/ 	});
-/************************************************************************/
-/******/ 	// The require scope
-/******/ 	var __webpack_require__ = {};
-/******/ 	
-/************************************************************************/
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
-/******/ 			}
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	(() => {
-/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/make namespace object */
-/******/ 	(() => {
-/******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = (exports) => {
-/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 			}
-/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 		};
-/******/ 	})();
-/******/ 	
 /************************************************************************/
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./src/index.js"](0, __webpack_exports__, __webpack_require__);
+/******/ 	__webpack_modules__["./src/index.js"]();
 /******/ 	
 /******/ })()
 ;
