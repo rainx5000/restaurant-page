@@ -15,7 +15,7 @@
   \**********************/
 /***/ (() => {
 
-eval("\nconst page = document.querySelector('body');\n\nconst navContainer = document.createElement(\"nav\");\nconst navigationList = document.createElement(\"ul\");\nconst navHome = document.createElement('li');\nconst navMenu = document.createElement('li');\nconst navContact = document.createElement('li');\n\nnavigationList.classList.add(\"navigation-list\");\n\npage.prepend(navContainer);\nnavContainer.append(navigationList);\n\nnavHome.textContent = \"Home\";\nnavHome.classList.add('nav-home');\nnavMenu.textContent = \"Menu\";\nnavMenu.classList.add('nav-menu');\nnavContact.textContent = \"Contact\";\nnavContact.classList.add(\"nav-contact\");\n\nnavigationList.append(navHome, navMenu, navContact);\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("function createHeader() {\n  const page = document.querySelector('body');\n\n  const navContainer = document.createElement(\"nav\");\n  const navigationList = document.createElement(\"ul\");\n  const navHome = document.createElement('li');\n  const navMenu = document.createElement('li');\n  const navContact = document.createElement('li');\n  \n  navigationList.classList.add(\"navigation-list\");\n  \n  page.prepend(navContainer);\n  navContainer.append(navigationList);\n  \n  navHome.textContent = \"Home\";\n  navHome.classList.add('nav-home');\n  navMenu.textContent = \"Menu\";\n  navMenu.classList.add('nav-menu');\n  navContact.textContent = \"Contact\";\n  navContact.classList.add(\"nav-contact\");\n  \n  navigationList.append(navHome, navMenu, navContact);\n}\n\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
 
 /***/ })
 
