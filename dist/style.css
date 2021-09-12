@@ -1,7 +1,22 @@
+nav {
+  padding-top: 2vh;
+}
 nav .navigation-list {
   display: flex;
   list-style: none;
   cursor: pointer;
+  width: fit-content;
+  padding: 0;
+  margin: auto;
+  font-size: 1.5em;
+}
+nav .navigation-list > * {
+  padding: 0px 20px;
+}
+
+.active {
+  font-weight: 700;
+  background-color: #bdb9b9;
 }
 
 /*# sourceMappingURL=style.css.map */
