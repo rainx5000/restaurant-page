@@ -25,16 +25,15 @@ function loadHeader() {
   navigationList.append(navHome, navMenu, navContact);
 }
 
-
 function initialLoad() {
   loadHeader();
   loadHome();
   tabHandler();
+  isActive(document.querySelector('.nav-home'));
 }
 
 function clearContent () {
   const content = document.querySelector('#content');
-
   content.removeChild(content.lastChild);
 }
 
@@ -43,9 +42,8 @@ function tabHandler () {
   nav.addEventListener('click', (e) => {
     const tab = e.target.textContent.toLowerCase()
     loadPage(tab);
+    isActive(e.target);
   })
-
-  
 }
 
 function loadPage(tab) {
@@ -61,6 +59,12 @@ function loadPage(tab) {
       loadContact();
       break;
   }
+}
+
+function isActive(tabElement) {
+  const nav = document.querySelector('.navigation-list');
+  Array.from(nav.children).forEach(tab => tab.classList.remove('active'));
+  tabElement.classList.add('active');
 }
 
 initialLoad()

@@ -5,6 +5,7 @@ function loadHome() {
   test.textContent = 'This is home';
   content.append(homeContainer);
   homeContainer.append(test);
+  homeContainer.classList.add('home');
   
 }
 
