@@ -1,4 +1,4 @@
-function createHeader() {
+function loadHeader() {
   const page = document.querySelector('body');
 
   const navContainer = document.createElement("nav");
@@ -8,10 +8,9 @@ function createHeader() {
   const navContact = document.createElement('li');
   
   navigationList.classList.add("navigation-list");
-  
   page.prepend(navContainer);
   navContainer.append(navigationList);
-  
+
   navHome.textContent = "Home";
   navHome.classList.add('nav-home');
   navMenu.textContent = "Menu";
@@ -23,3 +22,9 @@ function createHeader() {
 }
 
 
+function initialLoad() {
+  loadHeader();
+  // loadHome();
+}
+
+initialLoad()
