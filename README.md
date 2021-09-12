@@ -24,3 +24,6 @@ TASKS:
 1 - first we will create the navigation in the index.js file
 2 - we will add the logic that would switch tabs each coming from the js files. If I click on menu, the tab that is created under menu.js would be appended to the index.js file
 
+
+Create the data module, we will return 
+

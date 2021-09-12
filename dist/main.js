@@ -15,7 +15,7 @@
   \**********************/
 /***/ (() => {
 
-eval("const page = document.querySelector('body');\n\nconst navContainer = document.createElement(\"nav\");\nconst navigationList = document.createElement(\"ul\");\nconst navHome = document.createElement('li');\nconst navMenu = document.createElement('li');\nconst navContact = document.createElement('li');\n\nnavigationList.classList.add(\"navigation-list\");\n\npage.prepend(navContainer);\nnavContainer.append(navigationList);\n\nnavHome.textContent = \"Home\";\nnavHome.classList.add('nav-home');\nnavMenu.textContent = \"Menu\";\nnavMenu.classList.add('nav-menu');\nnavContact.textContent = \"Contact\";\nnavContact.classList.add(\"nav-contact\");\n\n\n\nnavigationList.append(navHome, navMenu, navContact);\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("\nconst page = document.querySelector('body');\n\nconst navContainer = document.createElement(\"nav\");\nconst navigationList = document.createElement(\"ul\");\nconst navHome = document.createElement('li');\nconst navMenu = document.createElement('li');\nconst navContact = document.createElement('li');\n\nnavigationList.classList.add(\"navigation-list\");\n\npage.prepend(navContainer);\nnavContainer.append(navigationList);\n\nnavHome.textContent = \"Home\";\nnavHome.classList.add('nav-home');\nnavMenu.textContent = \"Menu\";\nnavMenu.classList.add('nav-menu');\nnavContact.textContent = \"Contact\";\nnavContact.classList.add(\"nav-contact\");\n\nnavigationList.append(navHome, navMenu, navContact);\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
 
 /***/ })
 

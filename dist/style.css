@@ -1,3 +1,7 @@
-
+nav .navigation-list {
+  display: flex;
+  list-style: none;
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=style.css.map */

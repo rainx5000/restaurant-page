@@ -1,3 +1,4 @@
+
 const page = document.querySelector('body');
 
 const navContainer = document.createElement("nav");
@@ -17,8 +18,6 @@ navMenu.textContent = "Menu";
 navMenu.classList.add('nav-menu');
 navContact.textContent = "Contact";
 navContact.classList.add("nav-contact");
-
-
 
 navigationList.append(navHome, navMenu, navContact);
 
