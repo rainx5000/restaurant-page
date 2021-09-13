@@ -1,6 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+body,
+html,
+#content {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+
+}
+
 nav {
-  padding-top: 2vh;
+  background-color: palevioletred;
+  padding: 2vh 0;
+  border-bottom: 5px solid rgb(224, 80, 80);
   .navigation-list {
+    // background-color: peru;
     display: flex; 
     list-style: none;
     cursor: pointer;
@@ -13,18 +26,24 @@ nav {
     }
   }
 }
+#content {
+  display: flex;
+  flex-direction: column;
+  :last-child {
+    flex: 1;
+  }
+}
 
-// .home {
-//   background-color: red;
-//   text-align: center;
-//   margin: auto;
-//   width: 50%;
-//   img {
-//     width: 100%;
-//     height: 50vh;
-//     object-fit: cover;
-//   }
-// }
+.home {
+  text-align: center;
+  margin: 0 auto 0 auto;
+  width: 50%;
+  img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+}
 
 .menu {
   display: flex;
@@ -50,5 +69,7 @@ nav {
 
 .active {
   font-weight: 700;
-  background-color: rgb(189, 185, 185);
+  background-color: rgb(224, 80, 80);
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
 }
