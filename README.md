@@ -27,5 +27,7 @@ TASKS:
 
 Create the data module, we will return 
 
+setActive function when run should make the thing clicked show its page, home ===> home page
+
 
 
