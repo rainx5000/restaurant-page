@@ -11,10 +11,7 @@ function loadContact() {
   phone.textContent = "Phone: 413-445-7688";
 
   contactContainer.append(title, email, phone)
-
   content.append(contactContainer);
-
-  
 }
 
 export {loadContact};

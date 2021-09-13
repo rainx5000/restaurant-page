@@ -12,18 +12,12 @@ function loadMenu() {
     const price = menu[item].price;
 
     const food = MenuItem(img, name, price);
-    menuContainer.append(food)
+    menuContainer.append(food);
   }
-
-
-
 }
 
 const MenuItem = (img, name, price) => {
-  const menuPage = document.querySelector('.menu');
   const itemContainer = document.createElement('div');
-
-  // menuPage.append(itemContainer);
 
   const ItemImg = document.createElement('img');
   ItemImg.src = img;
@@ -31,10 +25,9 @@ const MenuItem = (img, name, price) => {
   ItemName.textContent = name;
   const ItemPrice = document.createElement('p');
   ItemPrice.textContent = price;
-  itemContainer.append(ItemImg, ItemName, ItemPrice)
+  itemContainer.append(ItemImg, ItemName, ItemPrice);
 
-  return itemContainer
-    
+  return itemContainer;
 }
 
 

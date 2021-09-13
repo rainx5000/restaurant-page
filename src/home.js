@@ -13,7 +13,6 @@ function loadHome() {
   content.append(homeContainer);
   homeContainer.append(storeName, storeImg, storeDisc);
   homeContainer.classList.add('home');
-  
 }
 
 export {loadHome};

@@ -40,7 +40,7 @@ function clearContent () {
 function tabHandler () {
   const nav = document.querySelector('.navigation-list');
   nav.addEventListener('click', (e) => {
-    const tab = e.target.textContent.toLowerCase()
+    const tab = e.target.textContent.toLowerCase();
     loadPage(tab);
     isActive(e.target);
   })
