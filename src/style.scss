@@ -14,6 +14,27 @@ nav {
   }
 }
 
+.menu {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  width: 50%;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  text-align: center;
+  >* {
+    width: 50%;
+    padding-bottom: 20px;
+  }
+  img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+  }
+  :last-child {
+    order: -1;
+  }
+}
 .active {
   font-weight: 700;
   background-color: rgb(189, 185, 185);

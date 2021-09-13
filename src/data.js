@@ -1,6 +1,6 @@
 const menu = {
   "burger": {
-    img: '../dist/images/burger.jpeg',
+    img: '../dist/images/burger.jpg',
     name: 'Loaded Burger',
     price: '$12.99'
   },
@@ -10,12 +10,12 @@ const menu = {
     price: '$7.99'
   },
   "boneout": {
-    img: '../dist/images/boneless.jpg',
-    name: '8-Piece Bonless Wings',
+    img: '../dist/images/boneless.jpeg',
+    name: '8-Piece Boneless Wings',
     price: '$7.99'
   },
   "fries": {
-    img: '../dist/images/fries.jpg',
+    img: '../dist/images/french-fries.jpg',
     name: 'Fries',
     price: '$4.99'
   }
