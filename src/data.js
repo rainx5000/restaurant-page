@@ -24,6 +24,7 @@ const menu = {
 const home = {
   title: 'The Spot',
   description: `The Spot, opened it's doors in 2011, in West springfield, MA. Now it spans over 600 locations across the United States, and Canada. It's founder, xXxFalconSniperDestroyerxXx used to have a favorite restaurant that shut down, it was considered "The Spot" with his boys. That gave him the idea, why not create a spot for everyone? That is when he decided to open his own franchise, naming it "The Spot".`,
+  img: '../dist/images/the-spot.jpg'
 }
 
 
