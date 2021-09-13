@@ -20,13 +20,23 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/data.js":
+/*!*********************!*\
+  !*** ./src/data.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"menu\": () => (/* binding */ menu),\n/* harmony export */   \"home\": () => (/* binding */ home)\n/* harmony export */ });\nconst menu = {\n  \"burger\": {\n    img: '../dist/images/burger.jpeg',\n    name: 'Loaded Burger',\n    price: '$12.99'\n  },\n  \"bonein\": {\n    img: '../dist/images/bonein.jpeg',\n    name: '8-Piece Tradition Wings',\n    price: '$7.99'\n  },\n  \"boneout\": {\n    img: '../dist/images/boneless.jpg',\n    name: '8-Piece Bonless Wings',\n    price: '$7.99'\n  },\n  \"fries\": {\n    img: '../dist/images/fries.jpg',\n    name: 'Fries',\n    price: '$4.99'\n  }\n}\n\nconst home = {\n  title: 'The Spot',\n  description: `The Spot, opened it's doors in 2011, in West springfield, MA. Now it spans over 600 locations across the United States, and Canada. It's founder, xXxFalconSniperDestroyerxXx used to have a favorite restaurant that shut down, it was considered \"The Spot\" with his boys. That gave him the idea, why not create a spot for everyone? That is when he decided to open his own franchise, naming it \"The Spot\".`,\n}\n\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/data.js?");
+
+/***/ }),
+
 /***/ "./src/home.js":
 /*!*********************!*\
   !*** ./src/home.js ***!
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"loadHome\": () => (/* binding */ loadHome)\n/* harmony export */ });\nfunction loadHome() {\n  const content = document.querySelector(\"#content\");\n  const homeContainer = document.createElement('main');\n  const test = document.createElement('p');\n  test.textContent = 'This is home';\n  content.append(homeContainer);\n  homeContainer.append(test);\n  homeContainer.classList.add('home');\n  \n}\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/home.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"loadHome\": () => (/* binding */ loadHome)\n/* harmony export */ });\n/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./data */ \"./src/data.js\");\n\n\nfunction loadHome() {\n  const content = document.querySelector(\"#content\");\n  const homeContainer = document.createElement('main');\n  const storeName = document.createElement('h1');\n  const storeDisc = document.createElement('p');\n  storeName.textContent = _data__WEBPACK_IMPORTED_MODULE_0__.home.title;\n  storeDisc.textContent = _data__WEBPACK_IMPORTED_MODULE_0__.home.description;\n  content.append(homeContainer);\n  homeContainer.append(storeName, storeDisc);\n  homeContainer.classList.add('home');\n  \n}\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/home.js?");
 
 /***/ }),
 
